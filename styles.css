@@ -1,35 +1,29 @@
-/* styles.css */
 
-/* Reset nhẹ */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: Arial, Helvetica, sans-serif; line-height: 1.45; padding: 16px; background:#fff; color:#111; }
 
-/* NAV */
+
 nav { background: #d4f2f4; color: #0b0848; padding: 10px 16px; margin-bottom: 16px; border-radius:6px; }
 nav .main-nav { list-style: none; display:flex; gap:12px; justify-content:flex-start; align-items:center; }
 nav .main-nav a { color: #0b0848; text-decoration: none; font-weight:600; padding:6px 8px; }
 nav .main-nav a:hover { text-decoration: underline; }
 
-/* Sections layout */
+
 .section { padding: 16px; border-radius: 6px; margin-bottom: 16px; }
 
-/* Intro background (yêu cầu): #F3FDE8 */
 #intro { background: #F3FDE8; }
 
-/* Contact background: image repeat + center content */
-/* Put your repeating pattern file named 'pattern.png' in same folder or change URL as needed */
+
 #contact {
     background-image: url('./pattern.jpeg');
     background-repeat: repeat;
     padding: 32px 16px;
-    text-align: center; /* nội dung căn giữa */
+    text-align: center;
     display: block;
 }
 
-/* Typography: tất cả h1..h4 theo yêu cầu (kích thước 24px, viền chữ màu đen) */
 h1, h2, h3, h4 {
     font-size: 24px;
-    /* text stroke */
     -webkit-text-stroke: 0.6px black;
     text-shadow:
         1px 1px 0 #000,
@@ -37,7 +31,6 @@ h1, h2, h3, h4 {
     margin-bottom: 12px;
 }
 
-/* Table (goals) style + border 1px đen cho từng ô */
 table.goals { width: 100%; border-collapse: collapse; margin-top: 12px; }
 table.goals th, table.goals td {
     border: 1px solid #000;
@@ -46,7 +39,6 @@ table.goals th, table.goals td {
 }
 table.goals th { background:#f0f0f0; text-align:left; }
 
-/* Form cơ bản */
 .contact-form { max-width: 720px; margin: 0 auto; text-align: left; background: rgba(255,255,255,0.85); padding: 16px; border-radius:8px; }
 .form-row { margin-bottom: 10px; display:flex; flex-direction:column; gap:6px; }
 .form-row label { font-weight:600; }
@@ -62,7 +54,6 @@ table.goals th { background:#f0f0f0; text-align:left; }
 }
 .form-row button:hover { opacity: 0.92; }
 
-/* Footer */
 footer {
     background: #d4f2f4;
     color: #0b0848;
@@ -70,10 +61,4 @@ footer {
     text-align: center;
     border-radius:6px;
     margin-top: 12px;
-}
-
-/* Responsive nhỏ */
-@media (max-width:600px) {
-    nav .main-nav { flex-direction: column; align-items: flex-start; }
-    .contact-form { width: 100%; padding: 12px; }
 }
