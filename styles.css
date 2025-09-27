@@ -19,7 +19,7 @@ nav .main-nav a:hover { text-decoration: underline; }
 /* Contact background: image repeat + center content */
 /* Put your repeating pattern file named 'pattern.png' in same folder or change URL as needed */
 .contact {
-    background-image: url('pattern.png');
+    background-image: url('pattern.jpeg');
     background-repeat: repeat;
     padding: 32px 16px;
     text-align: center; /* nội dung căn giữa */
